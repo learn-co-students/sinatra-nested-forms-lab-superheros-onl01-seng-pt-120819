@@ -9,9 +9,9 @@
     <h1>Create a Team and Heroes!</h1>
     <form action="/teams" method="post">
         <label for="team_name">Team Name: </label>
-        <input type="text" name="team_name" id="team[name]"><br>
+        <input type="text" name="team[name]" id="team[name]"><br>
         <label for="team_motto">Team Motto: </label>
-        <input type="text" name="team_name" id="team[motto]"><br>
+        <input type="text" name="team[motto]" id="team[motto]"><br>
 
         <h3>Hero 1</h3>
         <label for="member1_name">Hero's Name:</label>
@@ -34,9 +34,10 @@
         <input type="text" name="member3_power" id="team[members][][power]"><br>
         <label for="member3_power">Hero's Biography: </label>
         <input type="text" name="member3_bio" id="team[members][][bio]"><br>
-
         <input type="submit" value="submit">
+
     </form>
+
 </body>
 </html>
 
