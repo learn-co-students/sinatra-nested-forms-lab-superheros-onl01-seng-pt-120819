@@ -1,3 +1,27 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset = "UTF-8">
+</head>
+<body>
+<div class="team">
+<h1>Team <%= @team.name %></h1>
+<h2>Team Motto: <%= @team.motto %></h2>
+</div>
+
+<div class="heros">
+<%@heros.each do|hero|%>
+<h2>Hero Name: <%= hero.name%></h2>
+<h3>Hero Power: <%= hero.power%></h3>
+<h3>Hero Biography: <%= hero.bio%></h3>
+<%end%>
+</div>
+</body>
+</html>
+
+
+
 
 
