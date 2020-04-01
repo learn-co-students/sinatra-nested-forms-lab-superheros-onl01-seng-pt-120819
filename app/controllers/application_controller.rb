@@ -11,15 +11,15 @@ class App < Sinatra::Base
     post '/teams' do
         @team_name = params[:team][:name]
         @team_motto = params[:team][:motto]
-        @hero_name = []
-        @hero_power = []
-        @hero_bio = []
+        @hero_name = [] #create empty array @hero_name
+        @hero_power = [] #create empty array @hero_power
+        @hero_bio = [] #create empty array @hero_bio
         @team_members = params[:team][:members]
 
         @team_members.each do |hero|
-            @hero_name << hero[:name]
-            @hero_power << hero[:power]
-            @hero_bio << hero[:bio]
+            @hero_name << hero[:name] #push into empty array @hero_name
+            @hero_power << hero[:power] #push into empty array @hero_power
+            @hero_bio << hero[:bio] #push into empty array @hero_bio
         end
 
         erb :team
